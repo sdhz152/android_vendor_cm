@@ -112,6 +112,18 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/SMWeatherProvider/SMWeatherProvider.apk:system/app/SMWeatherProvider/SMWeatherProvider.apk
 
+# USE V4A
+ifeq ($(WITH_V4A),true)
+PRODUCT_COPY_FILES += $(shell test -d vendor/cm/prebuilt/V4A/app/ViPER4Android && \
+    find vendor/cm/prebuilt/V4A/app/ViPER4Android -name '*.apk' \
+    -printf '%p:system/app/ViPER4Android/%f ')
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/lib/soundfx/libv4a.so:system/lib/soundfx/libv4a.so
+else
+PRODUCT_PACKAGES += \
+    AudioFX
+endif
+
 # Bootanimation
 PRODUCT_PACKAGES += \
     bootanimation.zip
@@ -139,7 +151,6 @@ PRODUCT_PACKAGES += \
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
-    AudioFX \
     CMFileManager \
     CMSettingsProvider \
     LineageSetupWizard \
