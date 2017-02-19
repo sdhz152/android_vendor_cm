@@ -153,7 +153,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CMFileManager \
     CMSettingsProvider \
-    LineageSetupWizard \
+    CyanogenSetupWizard \
     PhoneLocationProvider \
     Eleven \
     ExactCalculator \
