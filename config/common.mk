@@ -155,6 +155,7 @@ PRODUCT_PACKAGES += \
     CMSettingsProvider \
     CyanogenSetupWizard \
     PhoneLocationProvider \
+    CustomTiles \
     Eleven \
     ExactCalculator \
     LiveLockScreenService \
