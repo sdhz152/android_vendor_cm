@@ -159,6 +159,7 @@ PRODUCT_PACKAGES += \
     CustomTiles \
     Eleven \
     ExactCalculator \
+    Jelly \
     LiveLockScreenService \
     LockClock \
     Trebuchet \
