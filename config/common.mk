@@ -105,6 +105,14 @@ PRODUCT_COPY_FILES += $(shell test -d vendor/cm/prebuilt/google/app/GooglePinYin
     find vendor/cm/prebuilt/google/app/GooglePinYin -name '*.so' \
     -printf '%p:system/app/GooglePinYin/lib/arm/%f ')
 
+#AMapNetworkLocation
+PRODUCT_COPY_FILES += $(shell test -d vendor/cm/prebuilt/AMapNetworkLocation && \
+    find vendor/cm/prebuilt/AMapNetworkLocation -name '*.apk' \
+    -printf '%p:system/priv-app/AMapNetworkLocation/%f ')
+PRODUCT_COPY_FILES += $(shell test -d vendor/cm/prebuilt/AMapNetworkLocation && \
+    find vendor/cm/prebuilt/AMapNetworkLocation -name '*.so' \
+    -printf '%p:system/priv-app/AMapNetworkLocation/arm64/arm/%f ')
+
 #ForceStop
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/ForceStop/ForceStop.apk:system/app/ForceStop/ForceStop.apk
