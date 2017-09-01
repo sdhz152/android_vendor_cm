@@ -111,7 +111,7 @@ PRODUCT_COPY_FILES += $(shell test -d vendor/cm/prebuilt/AMapNetworkLocation && 
     -printf '%p:system/priv-app/AMapNetworkLocation/%f ')
 PRODUCT_COPY_FILES += $(shell test -d vendor/cm/prebuilt/AMapNetworkLocation && \
     find vendor/cm/prebuilt/AMapNetworkLocation -name '*.so' \
-    -printf '%p:system/priv-app/AMapNetworkLocation/arm64/arm/%f ')
+    -printf '%p:system/priv-app/AMapNetworkLocation/lib/arm64/%f ')
 
 #ForceStop
 PRODUCT_COPY_FILES += \
