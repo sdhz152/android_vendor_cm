@@ -164,7 +164,6 @@ PRODUCT_PACKAGES += \
     PhoneLocationProvider \
     Eleven \
     ExactCalculator \
-    Jelly \
     LockClock \
     Trebuchet \
     WallpaperPicker \
